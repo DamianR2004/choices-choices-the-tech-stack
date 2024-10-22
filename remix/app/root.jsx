@@ -6,6 +6,8 @@ import {
   ScrollRestoration,
 } from "@remix-run/react";
 
+import styles from './styles/main.css';
+
 
 export function Layout({ children }) {
   return (
@@ -23,4 +25,8 @@ export function Layout({ children }) {
       </body>
     </html>
   );
+}
+
+export function links() {
+  return [{ rel: 'stylesheet', href: styles }];
 }

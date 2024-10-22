@@ -3,8 +3,8 @@ import { json } from "@remix-run/node";
 
 export async function loader() {
     const response = await fetch("https://fdnd-agency.directus.app/items/avl_webinars?fields=*.*.*");
-    const contourings = await response.json();
-    return json(contourings);
+    const webinrs = await response.json();
+    return json(webinrs);
 }
 
 export default function WebinarData() {
