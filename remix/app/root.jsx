@@ -1,12 +1,11 @@
 import {
   Links,
   Meta,
-  Outlet,
   Scripts,
   ScrollRestoration,
 } from "@remix-run/react";
 
-import styles from './styles/main.css';
+import './styles/main.css';
 
 
 export function Layout({ children }) {

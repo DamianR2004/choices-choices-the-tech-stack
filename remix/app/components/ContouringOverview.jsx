@@ -1,5 +1,7 @@
 import { Link, useLoaderData } from '@remix-run/react';
 import { json } from "@remix-run/node";
+import '../styles/main.css';
+
 
 export async function loader() {
     const response = await fetch("https://fdnd-agency.directus.app/items/avl_contourings?fields=*.*.*");
